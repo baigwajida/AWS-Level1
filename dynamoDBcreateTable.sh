@@ -1,0 +1,1 @@
+ dynamodbcreateTable=$(aws dynamodb create-table --table-name PETest1 --attribute-definitions AttributeName=PE_ID,AttributeType=S AttributeName=Name,AttributeType=S --key-schema AttributeName=PE_ID,KeyType=HASH AttributeName=Name,KeyType=RANGE --provisioned-throughput ReadCapacityUnits=5,WriteCapacityUnits=5)
